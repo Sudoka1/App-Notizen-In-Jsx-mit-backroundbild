@@ -1,0 +1,72 @@
+body{
+  background-image: url('/src/notizenbild.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.note-input {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.note-input input {
+  padding: 10px;
+  font-size: 16px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+}
+
+.note-input button {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.note-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-list li {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: calc(100% - 22px);
+}
+
+@media(min-width: 600px) {
+  .note-input {
+    flex-direction: row;
+  }
+  
+  .note-input input {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  
+  .note-input button {
+    width: auto;
+  }
+  
+  .note-list li {
+    width: 60%;
+  }
+}
